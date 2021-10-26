@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>Eloeberechnung</title>
+	<meta http-equiv="Content_Type" content="text/html; charset=utf-8">
+	
+	<script>
+	   "use strict";
+	   
+	  function fErloesBerechnen() {
+	     var vMenge;
+		 var vErloese;
+		 var vAusgabe;
+		 
+		 vMenge = document.getElementById("idMenge").value;
+		 vMenge = parseFloat(vMenge)
+		 
+		 vErloese = vMenge * 9.99;
+		 
+		 vAusgabe = "";
+		 vAusgabe = vAusgabe + "Der Erlös beträgt bei einer Menge von ";
+		 vAusgabe = vAusgabe + vMenge;
+		 vAusgabe = vAusgabe + " USB-Aufladekabeln ";
+		 vAusgabe = vAusgabe + vErloes;
+		 vAusgabe = vAusgabe + " € ";
+		 
+		 document.getElementById("idAusgabe").innerHTML=vAusgabe;
+		 }
+	</script>
+  </head>
+  
+  <body>
+      <h1>Preisbestimmung USB-Powerbank-Großhandel</h1>
+	  <img src ="Logo.png" width="370px"
+	  height="100px" align="left"/>
+	  Menge in Stück:<input id="idMenge" type="text" value="10"><br/><br/>
+	  <button onClick="fErloesBerechnen();">Berechne den Erlös</button><br>
+	  <br>
+	  <div id="idAusgabe">Hier steht später, wie hoch der Erlös ist.</div>
+  </body>
+</html>
+		
